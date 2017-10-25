@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+echo Cassandra entry point
+
 # first arg is `-f` or `--some-option`
 if [ "${1:0:1}" = '-' ]; then
 	set -- cassandra -f "$@"
